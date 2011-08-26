@@ -1,3 +1,14 @@
+To import project:
 1. Checkout project.
 2. Run 'mvn eclipse:clean eclipse:eclipse -DdownloadSources' at the root of the project.
 3. Import existing project into Eclipse.
+
+To package project:
+1. Run 'mvn package'.
+2. JAR will be in the target directory at the root of the project.
+3. Run 'java -jar target/example-executable-1.0-SNAPSHOT.jar' and this will run the main method in
+   HelloProcessor.
+
+Note:
+1. Any time you modify the pom, rerun 'mvn eclipse:clean eclipse:eclipse -DdownloadSources'
+   at the root of the project, then refresh the project in Eclipse.
